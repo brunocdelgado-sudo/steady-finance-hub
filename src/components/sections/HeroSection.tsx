@@ -1,5 +1,6 @@
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CheckCircle, TrendingUp, PieChart, Wallet } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const benefits = [
   {
@@ -18,9 +19,21 @@ const benefits = [
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="min-h-screen flex items-center pt-20 bg-background relative overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent pointer-events-none" />
+    <section 
+      id="inicio" 
+      className="min-h-screen flex items-center pt-20 relative overflow-hidden"
+    >
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      
+      {/* Dark Overlay with Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60" />
+      
+      {/* Additional overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/30" />
       
       <div className="section-container relative z-10">
         <div className="max-w-4xl">
