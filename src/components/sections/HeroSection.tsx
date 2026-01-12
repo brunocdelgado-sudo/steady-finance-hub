@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CheckCircle, TrendingUp, PieChart, Wallet } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
@@ -18,15 +19,28 @@ const benefits = [
 ];
 
 export function HeroSection() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section 
       id="inicio" 
       className="min-h-screen flex items-center pt-20 relative overflow-hidden"
     >
-      {/* Background Image */}
+      {/* Background Image with Parallax */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
+        style={{ 
+          backgroundImage: `url(${heroBackground})`,
+          transform: `translateY(${scrollY * 0.4}px) scale(1.1)`,
+        }}
       />
       
       {/* Dark Overlay with Gradient */}
