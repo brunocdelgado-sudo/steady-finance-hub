@@ -64,10 +64,20 @@ export function HeroSection() {
             </p>
           </div>
 
-          <p className="text-text-secondary mt-12 flex items-center gap-2 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <CheckCircle className="w-5 h-5 text-primary" />
-            Do operacional ao estratégico — com método e acompanhamento.
-          </p>
+          <div className="mt-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <div className="inline-flex items-center gap-3 bg-surface/50 backdrop-blur-sm border border-primary/20 rounded-full px-5 py-3">
+              <CheckCircle className="w-5 h-5 text-primary" />
+              <span className="text-text-secondary">
+                <span className="relative inline-block">
+                  <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-[length:200%_auto] animate-shimmer bg-clip-text text-transparent font-bold">
+                    Do operacional ao estratégico
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary-light to-primary/60 rounded-full" />
+                </span>
+                {" "}— com método e acompanhamento.
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

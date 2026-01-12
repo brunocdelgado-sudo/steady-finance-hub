@@ -1,4 +1,5 @@
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { KeywordMarquee } from "@/components/KeywordMarquee";
 import { AlertTriangle, XCircle, CheckCircle2, ArrowRight } from "lucide-react";
 
 const warningSignals = [
@@ -11,8 +12,11 @@ const warningSignals = [
 
 export function PainSolutionSection() {
   return (
-    <section id="dor-solucao" className="bg-surface py-20 md:py-28">
-      <div className="section-container">
+    <section id="dor-solucao" className="bg-surface pt-0 pb-20 md:pb-28">
+      {/* Keyword Marquee */}
+      <KeywordMarquee />
+      
+      <div className="section-container pt-16 md:pt-20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="section-title mb-6">
