@@ -1,19 +1,21 @@
 import { MessageCircle } from "lucide-react";
+import logoLice from "@/assets/logo-lice.png";
 
 const whatsappLink = "https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20financeira.";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border py-12">
+    <footer className="bg-background border-t border-border py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">L</span>
-              </div>
-              <span className="font-heading font-bold text-xl text-foreground">LICE CONSULTORIA</span>
+            <div className="mb-4">
+              <img 
+                src={logoLice} 
+                alt="LICE Consultoria" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-text-secondary text-sm">
               Gestão financeira profissional para empresas que querem crescer com controle.

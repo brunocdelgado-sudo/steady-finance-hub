@@ -1,6 +1,6 @@
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { CheckCircle, Users, Lightbulb, Target, BarChart3 } from "lucide-react";
-import founderPortrait from "@/assets/founder-portrait.jpg";
+import { Users, Lightbulb, Target, BarChart3 } from "lucide-react";
+import fabioLice from "@/assets/fabio-lice.jpg";
 
 const differentials = [
   { 
@@ -49,29 +49,32 @@ export function AboutSection() {
               <div className="relative flex-shrink-0">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden ring-4 ring-primary/20">
                   <img 
-                    src={founderPortrait} 
-                    alt="Fábio Lice - Fundador" 
+                    src={fabioLice} 
+                    alt="Fábio Lice - Sócio-diretor" 
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
                 <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-lg text-sm font-bold">
-                  Fundador
+                  Sócio-diretor
                 </div>
               </div>
               
               {/* Info */}
               <div className="text-center md:text-left">
-                <h3 className="text-2xl font-heading font-bold text-foreground mb-2">
+                <h3 className="text-2xl font-heading font-bold text-foreground mb-1">
                   Fábio Lice
                 </h3>
-                <p className="text-primary font-medium mb-4">
-                  Especialista em Finanças Corporativas
+                <p className="text-primary font-medium mb-1">
+                  Contador | MBA em Gestão de Negócios, Finanças e Controladoria
                 </p>
-                <p className="text-text-secondary max-w-xl">
-                  Profissional com experiência no mercado financeiro e atuação direta no 
-                  suporte a empresas em planejamento, rotinas e processos financeiros. 
-                  Já ajudou dezenas de empresas a sair do caos e ter previsibilidade.
+                <p className="text-text-secondary text-sm mb-4">
+                  +20 anos de experiência em gestão financeira e controladoria
+                </p>
+                <p className="text-text-secondary max-w-xl text-sm leading-relaxed">
+                  Especialista em planejamento financeiro, indicadores de desempenho e reestruturação financeira. 
+                  Atua como consultor e palestrante, auxiliando empresários a tomarem decisões estratégicas 
+                  com base em dados e resultados. Experiência direta na profissionalização de micro e pequenas empresas.
                 </p>
               </div>
             </div>
@@ -82,7 +85,7 @@ export function AboutSection() {
             {differentials.map((diff, index) => (
               <div 
                 key={index} 
-                className="group bg-background border border-border rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                className="group bg-background border border-border rounded-xl p-6 hover:border-primary/50 hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all">
