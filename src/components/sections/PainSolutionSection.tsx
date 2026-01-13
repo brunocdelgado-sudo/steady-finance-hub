@@ -12,11 +12,13 @@ const warningSignals = [
 
 export function PainSolutionSection() {
   return (
-    <section id="dor-solucao" className="bg-surface pt-0 pb-20 md:pb-28">
+    <section id="dor-solucao" className="bg-surface">
       {/* Keyword Marquee */}
-      <KeywordMarquee />
+      <div className="py-6">
+        <KeywordMarquee />
+      </div>
       
-      <div className="section-container pt-16 md:pt-20">
+      <div className="section-container py-16 md:py-20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="section-title mb-6">

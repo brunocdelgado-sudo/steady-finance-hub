@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoLice from "@/assets/logo-lice.png";
 
 const navLinks = [
   { href: "#inicio", label: "Início", sectionId: "inicio" },
@@ -63,11 +64,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">L</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-foreground">LICE</span>
+          <a href="#inicio" className="flex items-center">
+            <img 
+              src={logoLice} 
+              alt="LICE Consultoria" 
+              className="h-10 md:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
