@@ -14,7 +14,7 @@ export function Footer() {
               <img 
                 src={logoLice} 
                 alt="LICE Consultoria" 
-                className="h-12 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <p className="text-text-secondary text-sm">
