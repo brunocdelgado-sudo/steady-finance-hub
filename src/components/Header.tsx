@@ -68,7 +68,7 @@ export function Header() {
             <img 
               src={logoLice} 
               alt="LICE Consultoria" 
-              className="h-10 md:h-12 w-auto"
+              className="h-12 md:h-14 w-auto"
             />
           </a>
 
