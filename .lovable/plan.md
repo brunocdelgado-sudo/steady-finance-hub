@@ -1,23 +1,21 @@
 
+## Plano: Aumentar Tamanho da Logo
 
-## Plano: Substituir Logo no Header
+### Alteracoes
 
-### Alteracao
+**Arquivo:** `src/components/Header.tsx` (linha 71)
 
-**Arquivo atual:** `src/assets/logo-lice.png`
+| Propriedade | Atual | Novo |
+|-------------|-------|------|
+| Altura mobile | `h-10` (40px) | `h-12` (48px) |
+| Altura desktop | `md:h-12` (48px) | `md:h-14` (56px) |
 
-**Acao:**
-- Substituir o arquivo de logo atual pela nova imagem enviada (`logo_lice.png`)
-- Copiar `user-uploads://logo_lice.png` para `src/assets/logo-lice.png`
+**Arquivo:** `src/components/Footer.tsx` (linha 17)
 
-### Componentes Atualizados Automaticamente
+| Propriedade | Atual | Novo |
+|-------------|-------|------|
+| Altura | `h-12` (48px) | `h-14` (56px) |
 
-| Componente | Localizacao |
-|------------|-------------|
-| Header | Logo no topo do site |
-| Footer | Logo no rodape |
+### Resumo
 
-### Observacao
-
-A nova logo possui texto branco com a seta verde, funcionando bem tanto no Header (fundo escuro/transparente quando rolado) quanto no Footer (fundo escuro). Nao sao necessarios ajustes de estilo pois os componentes ja importam a logo do mesmo caminho.
-
+A logo tera um aumento de aproximadamente 16-20% em ambos os locais, mantendo proporcionalidade e boa legibilidade.
